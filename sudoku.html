@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="sudoku.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>Sudoku</h1>
+    <div id="start">
+        <button>START</button>
+        <button class="rule">Rule</button>
+        <div id="rule">
+            <h1>ルール</h1>
+            <p>縦・横・3*3のブロックにはそれぞれ重複しない1~9の数字が入ります</p>
+            <br>
+            <p>数字の書き込みにはキーボードを使用してください（テンキー可）</p>
+            <p>数字を消すときは、BackSpaceか0を入力してください</p>
+            <br>
+            <p>Grayボタンは問題のマスをグレーにします</p>
+            <br>
+            <p>Checkボタンは間違っているマスを赤くします</p>
+            <p>赤く表示している間は数字を書き込めません</p>
+            <p>＊Checkボタンは一度しか使用できません</p>
+            <br>
+            <p>終わったらJudgeボタンを押してください</p>
+            <button class="tojiru">閉じる</button>
+        </div>
+        <p></p>
+    </div>
+    <div id="task">
+        <table align="center">
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="btm">
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="btm">
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td class="right"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+        <div id="btns">
+            <button id="gray">Gray</button>
+            <button id="check">Check</button>
+            <button id="judge">Judge</button>
+        </div>
+    </div>
+    <div id="cong">
+        <h1>Congratulations!</h1>
+        <p>次の問題へ進もう！（ない）</p>
+        <button class="quit">Quit</button>
+    </div>
+    <div id="diff">
+        <h1>This is too difficult for you lol</h1>
+        <button class="quit">Try Again?</button>
+    </div>
+</body>
+</html>
